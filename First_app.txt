@@ -1,7 +1,0 @@
-fun main(args:Array<String>){
-
-  print("hi ayush,\n")
-  print("Welcome to Kotlin")
-  print(3)
-
-}
