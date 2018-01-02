@@ -14,11 +14,11 @@ class Car(Type:String,Model:Int,Price:Double,Miles:Int,Owner:String)
         this.Price=Price
         this.Miles=Miles
     }                           //it can also be called via Car.Owner
-    fun getPrice():Double?
+    fun GetPrice():Double?
     {
         return this.Price!! -(this.Miles!!.toDouble())     //as price in double and miles in int
     }
-    fun getOwner():String?
+    fun GetOwner():String?
     {
         return this.Owner
     }
@@ -27,6 +27,6 @@ class Car(Type:String,Model:Int,Price:Double,Miles:Int,Owner:String)
 fun main(args:Array<String>)
 {
     var mycar= Car("BMW",2010,6500.56,234,"Ayush")
-    println("New Owner is "+mycar.getOwner())
-    println("New Price is "+mycar.getPrice())
+    println("New Owner is "+mycar.GetOwner())
+    println("New Price is "+mycar.GetPrice())
 }
